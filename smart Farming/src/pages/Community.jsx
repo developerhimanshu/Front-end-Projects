@@ -10,29 +10,25 @@ const Community = () =>{
 
     const ProtectedRoute = ({ children }) => {
       if (!currentUser) {
-        return <Navigate to="/login" />;
+        return <Navigate to="/community/login" />;
       }
   
       return children
     };
   
     return (
-      <BrowserRouter>
         <Routes>
-          
             <Route
-              index
+              path='community/home'
               element={
                 <ProtectedRoute>
                   <CommunityHome />
                 </ProtectedRoute>
               }
             />
-            <Route path="login" element={<Login />} />
-            <Route path="register" element={<Register />} />
-          
+            <Route path="/community/login" element={<Login />} />
+            <Route path="/community/register" element={<Register />} />  
         </Routes>
-      </BrowserRouter>
     );
 }
 export default Community;

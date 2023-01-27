@@ -20,9 +20,6 @@ const Register = () => {
 
         try {
             const res = await createUserWithEmailAndPassword(auth, email, password)
-
-
-
             const storageRef = ref(storage, displayName);
             const uploadTask = uploadBytesResumable(storageRef, file);
             uploadTask.on(
@@ -30,7 +27,6 @@ const Register = () => {
                     setErr(true);
                 },
                 () => {
-
                     getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
                         await updateProfile(res.user, {
                             displayName,
@@ -51,8 +47,6 @@ const Register = () => {
             console.log(err)
             setErr(true)
         }
-
-
     }
 
     return (

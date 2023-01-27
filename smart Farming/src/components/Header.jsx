@@ -6,7 +6,7 @@ export default function Header(){
             <h1><Link to ="/">Smart<br/>Farming</Link></h1>
             <main>
                <Link to ="/">Info</Link>
-               <Link to ="/community/register">Community</Link>
+               <Link to ="/community">Community</Link>
                <Link to ="/about">About</Link>
                <Link to ="/contact">Contact</Link>
             </main>
