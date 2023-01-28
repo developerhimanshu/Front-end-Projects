@@ -20,7 +20,8 @@
     "react-hooks": "^1.0.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router": "^6.4.4",
-    "react-router-dom": "^6.4.4"
+    "react-router-dom": "^6.4.4",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",

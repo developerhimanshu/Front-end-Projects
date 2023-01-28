@@ -449,6 +449,15 @@ main{
 .search{
   border-bottom:1px solid rgb(138, 137, 137);
 }
+.input-search>input{
+  background-color:#323142;
+  border:none;
+  outline:none;
+  padding:0.5rem;
+  color:white;
+  width:100%;
+  border-bottom:.5px solid rgba(138, 138, 138, 0.552);
+}
 .chats{
   height: 100vh;
   overflow-y:scroll;
@@ -470,6 +479,17 @@ main{
   color:white;
   font-size:20px;
   padding-left:12px;
+}
+.chatInfo>div{
+  display: flex;
+  align-items: center;
+}
+.user-img{
+  width:3rem;
+  height:3rem;
+  border-radius: 50%;
+  padding: 10px;
+  object-fit: cover;
 }
 .chatIcons>img{
   height:20px;
@@ -494,6 +514,7 @@ main{
   justify-content: space-between;
   align-items: center;
 }
+
 .input>input{
   width: 100%;
   border:none;
