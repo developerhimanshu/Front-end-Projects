@@ -1,0 +1,1 @@
+[Deployed Here](https://static-website-using-chakra-ui.vercel.app/)
