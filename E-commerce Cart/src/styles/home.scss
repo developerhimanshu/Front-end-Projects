@@ -1,0 +1,38 @@
+@import "colors";
+
+.home{
+    display: flex;
+    padding:3rem;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.productCart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:$tertiary;
+    border-radius:16px;
+    margin:20px;
+    align-items: center;
+    color:$primary;
+    height:300px;
+    padding:30px;
+    position:relative;
+    gap:3px;
+    >img{
+        width:190px;
+        height:150px;
+        object-fit:contain;
+    }
+    >button{
+        padding: 10px;
+        background-color:$secondary;
+        border:none;
+        color:$tertiary;
+        margin-right: 40px;
+        border-radius:6px;
+        margin:auto 0;
+        cursor:pointer;
+    }
+}
